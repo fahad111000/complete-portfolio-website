@@ -75,7 +75,7 @@ a:hover {
 */
 
 .intro {
-    /* border: 2px solid red; */
+    border-top: 1px solid var(--hover-color);
     padding: 100px 50px;
     /* text-align: center; */
 
@@ -85,6 +85,7 @@ a:hover {
 .intro .container p:first-child {
     color: #3f3a3a;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .intro .container h1 {
