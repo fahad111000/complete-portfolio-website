@@ -10,6 +10,8 @@
     --primary-color: #ffffff;
     --secondary-color: black;
     --borders: rgba(82, 81, 81, 0.5);
+    --button-color: rgb(0, 183, 255);
+    --hover-color: rgb(255, 153, 0);
 }
 
 a {
@@ -18,9 +20,15 @@ a {
     color: var(--secondary-color);
 }
 
+.container {
+    width: 95%;
+    border: 2px solid orange;
+    margin-inline: auto;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    background-color: #fcfafa8a
 }
 
 
@@ -32,12 +40,13 @@ body {
 
 
 .navbar {
-    border-bottom: 1px solid var(--borders);
+    /* border-bottom: 1px solid var(--borders); */
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 5px 0;
-    
+    justify-content: space-between;
+    padding: 5px 40px;
+    /* border: 2px solid red; */
+
 }
 
 .navbar .ul {
@@ -47,7 +56,55 @@ body {
 }
 
 a:hover {
-    color: rgb(255, 153, 0);
+    color: var(--hover-color);
 }
 
 /* _______________________________________ */
+
+
+/*
+============================================= 
+               Intro Section  
+=============================================
+*/
+
+.intro {
+    border: 2px solid red;
+    padding: 100px 0;
+}
+
+
+.intro .container p:first-child {
+    color: #3f3a3a;
+    font-weight: 500;
+}
+
+.intro .container .parag {
+    color: rgb(90, 89, 89);
+    padding: 10px 0;
+}
+
+.intro .container h1 {
+    padding: 0 0 5px;
+    font-size: 55px;
+    border: 2px solid red;
+    font-weight: 800;
+    color: var(--hover-color);
+}
+
+.intro .container span {
+    color: rgb(56, 54, 54);
+}
+
+.intro .container .btn {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--button-color);
+    color: var(--primary-color);
+}
+
+.intro .container .btn:hover {
+    background-color: var(--hover-color);
+}
