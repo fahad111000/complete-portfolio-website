@@ -32,7 +32,8 @@ body {
 }
 
 .logo {
-    /* border: 2px solid var(--hover-color); */
+    border: 2px solid orange;
+
     margin-left: 76px;
 
 }
@@ -46,7 +47,7 @@ body {
 
 
 .navbar {
-    /* border-bottom: 1px solid var(--borders); */
+    border-bottom: 1px solid var(--borders);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,6 +60,7 @@ body {
     list-style: none;
     display: flex;
     gap: 80px;
+    /* border: 2px solid green; */
 }
 
 a:hover {
@@ -75,20 +77,28 @@ a:hover {
 */
 
 .intro {
-    border-top: 1px solid var(--hover-color);
+    /* border-top: 1px solid var(--hover-color); */
     padding: 100px 50px;
     /* text-align: center; */
-
+    border: 2px solid orange;
 }
 
+.intro .container {
+    border: 2px solid aqua;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
 .intro .container p:first-child {
+    border: 2px solid red;
     color: #3f3a3a;
     font-weight: 500;
     font-size: 20px;
 }
 
 .intro .container h1 {
+    border: 2px solid ;
     padding: 0 0 5px;
     font-size: 55px;
     /* border: 2px solid red; */
@@ -97,6 +107,7 @@ a:hover {
 }
 
 .intro .container .parag {
+    border: 2px solid red;
     color: rgb(90, 89, 89);
     padding: 10px 0 20px;
 }
@@ -116,4 +127,23 @@ a:hover {
 
 .intro .container .btn:hover {
     background-color: var(--hover-color);
+}
+
+.intro .container .image {
+    border: 2px solid red;
+}
+
+/*
+============================================= 
+               Service Section  
+=============================================
+*/
+
+.services-section {
+    border: 2px solid red;
+    padding: 100px 0;
+}
+
+.services-section .container {
+    border: 2px solid green;
 }
