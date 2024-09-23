@@ -13,11 +13,26 @@
     --button-color: rgb(0, 183, 255);
     --hover-color: rgb(144, 5, 236);
 }
-
+/* ___________CUSTOME CLASSES___________ */
 a {
     text-decoration: none;
     font-size: 16px;
     color: var(--secondary-color);
+}
+
+.heading {
+    font-size: 40px;
+    color: var(--hover-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+.span {
+    color: #3f3a3a;
+    padding: 0 0 5px;
+    font-size: 40px;
+    font-weight: 700;
+    
 }
 
 .container {
@@ -32,7 +47,6 @@ body {
 }
 
 .logo {
-    border: 2px solid orange;
 
     margin-left: 76px;
 
@@ -77,37 +91,29 @@ a:hover {
 */
 
 .intro {
-    /* border-top: 1px solid var(--hover-color); */
     padding: 100px 50px;
-    /* text-align: center; */
-    border: 2px solid orange;
 }
 
 .intro .container {
-    border: 2px solid aqua;
     display: flex;
     justify-content: space-between;
     
 }
 
 .intro .container p:first-child {
-    border: 2px solid red;
     color: #3f3a3a;
     font-weight: 500;
     font-size: 20px;
 }
 
 .intro .container h1 {
-    border: 2px solid ;
     padding: 0 0 5px;
     font-size: 55px;
-    /* border: 2px solid red; */
     font-weight: 800;
     color: var(--hover-color);
 }
 
 .intro .container .parag {
-    border: 2px solid red;
     color: rgb(90, 89, 89);
     padding: 10px 0 20px;
 }
@@ -140,10 +146,56 @@ a:hover {
 */
 
 .services-section {
-    border: 2px solid red;
+    /* border-top: 1px solid black; */
     padding: 100px 0;
+    position: relative;
+    margin: 50px 0 0 0;
 }
+
 
 .services-section .container {
     border: 2px solid green;
+}
+
+
+.services-section .extra-info {
+    border: 2px solid black;
+    position: absolute;
+    top:  -50px;
+    left: 65px;
+    padding: 20px 10px;
+}
+
+.services-section .singel-info {
+    display: flex;
+    align-items: center;
+}
+
+.services-section .singel-info .fa-solid {
+    border: 2px solid black;
+    font-size: 25px;
+    color: var(--hover-color);
+    border-radius: 50%;
+    padding: 10px ;
+}
+
+.services-section .singel-info .job-experiance {
+    /* border: 2px solid red; */
+    padding: 10px 15px;
+}
+
+.singel-info h3 {
+    color: var(--hover-color);
+    font-size: 22px;
+}
+
+.extra-info h5 {
+    font-size: 15px;
+    color: #3f3a3a;
+    padding: 5px 0;
+}
+
+
+.skill {
+    border: 2px solid orange;
 }
