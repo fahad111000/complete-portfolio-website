@@ -12,6 +12,7 @@
     --borders: rgba(82, 81, 81, 0.5);
     --button-color: rgb(0, 183, 255);
     --hover-color: rgb(144, 5, 236);
+    --hover-temp-color: rgb(111, 0, 185);
 }
 /* ___________CUSTOME CLASSES___________ */
 a {
@@ -34,6 +35,26 @@ a {
     font-weight: 700;
     
 }
+.sub-span {
+    color: #3f3a3a;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.card-heading{
+    color: var(--hover-color);
+    font-size: 18px;
+}
+
+.card-sub-heading{
+    font-size: 13px;
+    color: #3f3a3a;
+    padding: 2px 0;
+}
+
+/* __________________________________________ */
+
 
 .container {
     width: 90%;
@@ -125,7 +146,7 @@ a:hover {
 
 .intro .container .btn {
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     background: var(--hover-color);
@@ -133,7 +154,7 @@ a:hover {
 }
 
 .intro .container .btn:hover {
-    background-color: var(--hover-color);
+    background-color: var(--hover-temp-color);
 }
 
 .intro .container .image {
@@ -189,23 +210,38 @@ a:hover {
     padding: 10px 15px;
 }
 
-.singel-info .card-heading{
-    color: var(--hover-color);
-    font-size: 18px;
-}
-
-.singel-info .card-sub-heading{
-    font-size: 13px;
-    color: #3f3a3a;
-    padding: 2px 0;
-}
 
 /* *******SKILL********** */
 
-.skill {
-    border: 2px solid black;
+.services-section .skill {
+    border: 2px solid green;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
 }
 
-.services-section .skill-card h3{
-    border: 2px solid orange;
+.services-section .skill-card {
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    /* border-radius: 10px; */
+    /* transition: 0.2s ease-in; */
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+
+.services-section .skill-card:hover {
+    /* border-bottom: 1px solid var(--hover-color); */
+    border-left: 3px solid var(--hover-color);
+    box-shadow: 1px 1px 3px #7540b375;
+    
+}
+.services-section .skill-card .fa-solid, .fa-python, .fa-js {
+    font-size: 40px;
+    color: var(--hover-color);
+    padding: 25px;
 }
