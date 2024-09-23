@@ -92,6 +92,7 @@ a:hover {
 
 .intro {
     padding: 100px 50px;
+    border: 2px solid red;
 }
 
 .intro .container {
@@ -153,19 +154,18 @@ a:hover {
 }
 
 
-.services-section .container {
-    border: 2px solid green;
-}
 
+
+/* *******EXTRA INFORMATION********** */
 
 .services-section .extra-info {
-    border: 2px solid black;
     position: absolute;
     display: flex;
     justify-content: space-around;
     top:  -50px;
     left: 65px;
     padding: 20px 10px;
+    box-shadow: 1px 1px 5px 1px  #e0e0e098;
 }
 
 .services-section .singel-info {
