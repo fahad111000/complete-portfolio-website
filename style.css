@@ -161,6 +161,8 @@ a:hover {
 .services-section .extra-info {
     border: 2px solid black;
     position: absolute;
+    display: flex;
+    justify-content: space-around;
     top:  -50px;
     left: 65px;
     padding: 20px 10px;
@@ -172,7 +174,7 @@ a:hover {
 }
 
 .services-section .singel-info .fa-solid {
-    border: 2px solid black;
+    border: 2px solid var(--hover-color) ;
     font-size: 25px;
     color: var(--hover-color);
     border-radius: 50%;
@@ -192,7 +194,7 @@ a:hover {
 .extra-info h5 {
     font-size: 15px;
     color: #3f3a3a;
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 
