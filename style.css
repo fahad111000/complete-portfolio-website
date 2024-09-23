@@ -92,7 +92,7 @@ a:hover {
 
 .intro {
     padding: 100px 50px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .intro .container {
@@ -164,8 +164,11 @@ a:hover {
     justify-content: space-around;
     top:  -50px;
     left: 65px;
+    align-items: center;
     padding: 20px 10px;
-    box-shadow: 1px 1px 5px 1px  #e0e0e098;
+    /* border: 1px solid gray; */
+    box-shadow: 1px 1px 5px 1px  #746f6f98;
+    border-radius: 60px;
 }
 
 .services-section .singel-info {
@@ -175,7 +178,7 @@ a:hover {
 
 .services-section .singel-info .fa-solid {
     border: 2px solid var(--hover-color) ;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--hover-color);
     border-radius: 50%;
     padding: 10px ;
@@ -186,18 +189,23 @@ a:hover {
     padding: 10px 15px;
 }
 
-.singel-info h3 {
+.singel-info .card-heading{
     color: var(--hover-color);
-    font-size: 22px;
+    font-size: 18px;
 }
 
-.extra-info h5 {
-    font-size: 15px;
+.singel-info .card-sub-heading{
+    font-size: 13px;
     color: #3f3a3a;
     padding: 2px 0;
 }
 
+/* *******SKILL********** */
 
 .skill {
+    border: 2px solid black;
+}
+
+.services-section .skill-card h3{
     border: 2px solid orange;
 }
