@@ -14,6 +14,7 @@
     --hover-color: rgb(144, 5, 236);
     --hover-temp-color: rgb(111, 0, 185);
 }
+
 /* ___________CUSTOME CLASSES___________ */
 a {
     text-decoration: none;
@@ -34,21 +35,22 @@ a {
     padding: 0 0 5px;
     font-size: 40px;
     font-weight: 700;
-    
+
 }
+
 .sub-span {
     color: #3f3a3a;
     font-size: 20px;
     font-weight: 700;
-    
+
 }
 
-.card-heading{
+.card-heading {
     color: var(--hover-color);
     font-size: 18px;
 }
 
-.card-sub-heading{
+.card-sub-heading {
     font-size: 13px;
     color: #3f3a3a;
     padding: 2px 0;
@@ -65,7 +67,7 @@ a {
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #fcfafa8a        
+    background-color: #fcfafa8a
 }
 
 .logo {
@@ -103,6 +105,9 @@ a:hover {
     color: var(--hover-color);
 }
 
+.active {
+    color: var(--hover-color);
+}
 /* _______________________________________ */
 
 
@@ -120,7 +125,7 @@ a:hover {
 .intro .container {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .intro .container p:first-child {
@@ -184,12 +189,12 @@ a:hover {
     position: absolute;
     display: flex;
     justify-content: space-around;
-    top:  -50px;
+    top: -50px;
     left: 65px;
     align-items: center;
     padding: 45px;
     /* border: 1px solid gray; */
-    box-shadow: 1px 1px 5px 1px  #746f6f98;
+    box-shadow: 1px 1px 5px 1px #746f6f98;
     /* border-radius: 60px; */
 }
 
@@ -199,11 +204,11 @@ a:hover {
 }
 
 .services-section .singel-info .fa-solid {
-    border: 2px solid var(--hover-color) ;
+    border: 2px solid var(--hover-color);
     font-size: 20px;
     color: var(--hover-color);
     border-radius: 50%;
-    padding: 10px ;
+    padding: 10px;
 }
 
 .services-section .singel-info .job-experiance {
@@ -222,11 +227,11 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
-    
+
 }
 
 .services-section .skill-card {
-    padding: 20px ;
+    padding: 20px;
     display: flex;
     align-items: center;
     background-color: var(--primary-color);
@@ -240,10 +245,101 @@ a:hover {
     box-shadow: 1px 1px 3px #7540b375;
     box-shadow: 1px 1px 3px #7540b375;
     border-left: 3px solid var(--hover-color);
-    
+
 }
-.services-section .skill-card .fa-solid, .fa-python, .fa-js {
+
+.services-section .skill-card .fa-solid,
+.fa-python,
+.fa-js {
     font-size: 40px;
     color: var(--hover-color);
     padding: 25px;
 }
+
+/*
+============================================= 
+               Project Section  
+=============================================
+*/
+
+.project-section {
+    border: 2px solid orange;
+}
+
+.project-section .projects {
+    border: 1px solid red;
+}
+
+.project-section .projects ul {
+    /* border: 1px solid black; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 30px 0;
+}
+
+.project-section .projects ul a {
+    font-weight: 700;
+    color: #3f3a3a;
+    position: relative;
+
+}
+
+.project-section .projects .active {
+    color: var(--hover-color);
+}
+
+.project-section .projects ul a:hover {
+    color: var(--hover-color);
+}
+
+
+.project-section .projects ul a::before {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: #3f3a3a;
+    position: absolute;
+    bottom: -8px;
+    transition: 0.3s ease-in;
+}
+
+.project-section .projects ul a:hover::before {
+    background-color: var(--hover-color);
+    width: 100%;
+    height: 3px;
+    color: var(--hover-color);
+
+}
+
+.project-card {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    /* padding: 30px; */
+    justify-content: center;
+    width: 80%;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.singel-project {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+.singel-project img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* height: 180px; */
+    /* object-fit: cover; */
+}
+
