@@ -26,6 +26,7 @@ a {
     color: var(--hover-color);
     font-weight: 700;
     text-align: center;
+    margin-top: 100px;
 }
 
 .span {
@@ -157,9 +158,9 @@ a:hover {
     background-color: var(--hover-temp-color);
 }
 
-.intro .container .image {
+/* .intro .container .image {
     border: 2px solid red;
-}
+} */
 
 /*
 ============================================= 
@@ -186,10 +187,10 @@ a:hover {
     top:  -50px;
     left: 65px;
     align-items: center;
-    padding: 20px 10px;
+    padding: 45px;
     /* border: 1px solid gray; */
     box-shadow: 1px 1px 5px 1px  #746f6f98;
-    border-radius: 60px;
+    /* border-radius: 60px; */
 }
 
 .services-section .singel-info {
@@ -214,12 +215,13 @@ a:hover {
 /* *******SKILL********** */
 
 .services-section .skill {
-    border: 2px solid green;
+    margin-top: 50px;
     padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
     
 }
 
@@ -229,15 +231,15 @@ a:hover {
     align-items: center;
     background-color: var(--primary-color);
     /* border-radius: 10px; */
-    /* transition: 0.2s ease-in; */
+    transition: 0.1s ease-in;
     cursor: pointer;
     border: 3px solid #fff;
 }
 
 .services-section .skill-card:hover {
-    /* border-bottom: 1px solid var(--hover-color); */
-    border-left: 3px solid var(--hover-color);
     box-shadow: 1px 1px 3px #7540b375;
+    box-shadow: 1px 1px 3px #7540b375;
+    border-left: 3px solid var(--hover-color);
     
 }
 .services-section .skill-card .fa-solid, .fa-python, .fa-js {
