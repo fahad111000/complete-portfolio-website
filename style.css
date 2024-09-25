@@ -401,7 +401,7 @@ a:hover {
     display: flex;
     justify-content: center;
     /* margin-top: 30px; */
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 .resume-section .btn {
@@ -420,10 +420,60 @@ a:hover {
 
 
 
+hr {
+    margin-top: 100px;
+    color: red;
+    width: 2px;
+    background-color: var(--hover-color);
+}
+
+/*
+============================================= 
+               About Section  
+=============================================
+*/
+
+.about-section {
+    border: 2px solid red;
+}
+
+.about-section .about-me {
+    margin: 20px auto 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px 0;
+}
 
 
+.about-section .about-me .image {
+    border: 2px solid orange;
+}
 
+.about-section .about-me .my-intro {
+    border: 2px solid orange;
+    width: 40%;
+    /* flex-grow: 1; */
+    /* padding: 20px ; */
+}
 
+.about-me .my-intro .card-heading{
+    font-size: 25px;
+    color: #3f3a3a;
+    padding: 10px 0;
+}
+
+.about-me .my-intro .personal-data {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.about-me .my-intro .personal-data .card-sub-heading {
+    font-size: 17px;
+}
 
 
 
