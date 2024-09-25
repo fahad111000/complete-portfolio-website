@@ -263,12 +263,9 @@ a:hover {
 =============================================
 */
 
-.project-section {
-    border: 2px solid orange;
-}
 
 .project-section .projects {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .project-section .projects ul {
@@ -345,5 +342,19 @@ a:hover {
 }
 
 .singel-project img:hover {
-    transform: scale(0.9);
+    transform: scale(0.911);
+}
+
+/*
+============================================= 
+               Resume Section  
+=============================================
+*/
+
+.resume-section {
+    border: 2px solid red;
+}
+
+.resume-section .qualification {
+    border: 2px solid black;
 }
