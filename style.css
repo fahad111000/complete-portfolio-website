@@ -352,38 +352,72 @@ a:hover {
 */
 
 .resume-section {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 50px;
 }
 
 .qualification {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
+}
+
+.resume-section .qualification .content {
+    padding: 20px;
+    position: relative;
 }
 
 .resume-section .qualification .card-heading {
     color: #292828;
-    font-size: 25px;
-    margin-top: 40px;
-    border: 2px solid orange;
+    font-size: 30px;
+    padding: 10px;
 }
 
-.resume-section .qualification .education-content {
-    border: 2px solid black;
-    padding: 10px 0;
+.resume-section .qualification .content::before {
+    content: ' ';
+    width: 3px;
+    height: 58px;
+    background-color: var(--hover-color);
+    position: absolute;
+    top: 32px;
+    left: -10px;
 }
-.resume-section .qualification .education-content .card-sub-heading {
-    font-size: 17px;
+
+.resume-section .qualification .content .card-sub-heading {
+    font-size: 16px;
     padding: 5px 0;
 }
 
 
-.resume-section .qualification .education-content span {
+.resume-section .qualification .content span {
     font-size: 12px;
     color: var(--hover-color);
     font-weight: 700;
     margin: 100px 0;
+}
+
+.resume-section .btn-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 30px; */
+    padding: 50px 0;
+}
+
+.resume-section .btn {
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.resume-section .btn:hover {
+    background-color: var(--hover-temp-color);
 }
 
 
@@ -418,8 +452,8 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center; */
-    /* width: 70%; */
-    /* margin-top: 20px; */
+/* width: 70%; */
+/* margin-top: 20px; */
 /* } */
 
 /* .resume-section  .card-heading  {
