@@ -108,6 +108,7 @@ a:hover {
 .active {
     color: var(--hover-color);
 }
+
 /* _______________________________________ */
 
 
@@ -334,12 +335,15 @@ a:hover {
     height: 250px;
 }
 
-.singel-project img{
+.singel-project img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* height: 180px; */
-    /* object-fit: cover; */
+    transform: scaleZ(1.2x);
+    transition: 0.2s ease-in;
 }
 
+.singel-project img:hover {
+    transform: scale(0.9);
+}
