@@ -356,18 +356,77 @@ a:hover {
     margin-top: 50px;
 }
 
-.resume-section .qualification-experinace {
-    /* border: 2px solid black; */
+.qualification {
+    border: 2px solid black;
     display: flex;
-    width: 70%;
-    margin-top: 20px;
-    padding: 20px 10px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.resume-section  .card-heading  {
-    /* border: 2px solid black; */
+.resume-section .qualification .card-heading {
+    color: #292828;
+    font-size: 25px;
+    margin-top: 40px;
+    border: 2px solid orange;
+}
+
+.resume-section .qualification .education-content {
+    border: 2px solid black;
+    padding: 10px 0;
+}
+.resume-section .qualification .education-content .card-sub-heading {
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+
+.resume-section .qualification .education-content span {
+    font-size: 12px;
+    color: var(--hover-color);
+    font-weight: 700;
+    margin: 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .resume-section .qualification-experinace {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    /* width: 70%; */
+    /* margin-top: 20px; */
+/* } */
+
+/* .resume-section  .card-heading  {
+    border: 2px solid black;
     font-size: 20px;
     color: #3f3a3a;
     font-weight: 700;
-}
+    margin: 0;
+    padding: 0;
+} */
