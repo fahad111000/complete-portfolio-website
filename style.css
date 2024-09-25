@@ -433,17 +433,15 @@ hr {
 =============================================
 */
 
-.about-section {
-    border: 2px solid red;
-}
+
 
 .about-section .about-me {
     margin: 20px auto 0;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
-    justify-content: center;
-    gap: 10%;
+    justify-content: space-around;
     padding: 20px 0;
+    gap: 130px;
 }
 
 
@@ -452,27 +450,42 @@ hr {
 }
 
 .about-section .about-me .my-intro {
-    border: 2px solid orange;
     width: 40%;
-    /* flex-grow: 1; */
-    /* padding: 20px ; */
 }
 
 .about-me .my-intro .card-heading{
     font-size: 25px;
-    color: #3f3a3a;
+    font-weight: 500;
+    color: var(--hover-color);
     padding: 10px 0;
 }
 
 .about-me .my-intro .personal-data {
-    border: 2px solid black;
-    margin-top: 30px;
+    /* border: 2px solid black; */
+    margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.about-me .my-intro .personal-data .card-sub-heading {
+.about-me .my-intro  .card-sub-heading {
     font-size: 17px;
+}
+.about-me .my-intro  .intrest  {
+    
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-me .my-intro .intrest .hobbies {
+    padding: 5px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.about-me .my-intro  .intrest span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #3f3a3a;
 }
 
 
