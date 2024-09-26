@@ -553,12 +553,42 @@ hr {
     display: flex;
     align-items: center;
     border-radius: 50%;
-    /* border: 2px solid red; */
     color: var(--primary-color);
     background-color: var(--hover-color);
 }
 
-/* Form */
+.contact-us-section .info .socail-icons {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.contact-us-section .info .socail-icons .fa-brands {
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 22px;
+    color: var(--hover-color);
+    padding: 5px;
+}
+
+.contact-us-section .info .socail-icons a:nth-child(odd) {
+    color: red;
+
+}
+
+.contact-us-section .info .socail-icons .fa-brands:hover {
+    cursor: pointer;
+    border: 1px solid var(--hover-color);
+    padding: 5px;
+}
+
+
+
+
+
+
+/****** Form ******/
 .contact-us-section .form {
     /* border: 2px solid black; */
     display: flex;
@@ -614,4 +644,14 @@ textarea:focus {
     background-color: var(--hover-temp-color);
     cursor: pointer;
 
+}
+
+/*
+============================================= 
+               Footer Section  
+=============================================
+*/
+
+.footer-section {
+    border: 2px solid red;
 }
