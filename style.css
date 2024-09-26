@@ -85,7 +85,7 @@ body {
 
 
 .navbar {
-    border-bottom: 1px solid var(--borders);
+    /* border-bottom: 1px solid var(--borders); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,7 +97,7 @@ body {
 .navbar .ul {
     list-style: none;
     display: flex;
-    gap: 80px;
+    gap: 40px;
     /* border: 2px solid green; */
 }
 
@@ -262,7 +262,7 @@ a:hover {
 =============================================
 */
 
-.project-section h1{
+.project-section h1 {
     margin: 0;
 }
 
@@ -400,6 +400,7 @@ a:hover {
     font-size: 16px;
     padding: 5px 0;
 }
+
 .resume-section .qualification .fa-calendar-days {
     color: var(--hover-color);
 }
@@ -663,8 +664,9 @@ textarea:focus {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 100px 0 ;
+    padding: 100px 0;
 }
+
 .footer .logo {
     margin: 0;
 }
@@ -692,7 +694,7 @@ textarea:focus {
     gap: 30px;
 }
 
-.footer-section  .social-icons{
+.footer-section .social-icons {
     display: flex;
     gap: 20px;
     /* border: 2px solid red; */
@@ -704,7 +706,7 @@ textarea:focus {
     padding: 5px;
 }
 
-.footer-section  .sub-footer {
+.footer-section .sub-footer {
     background: var(--hover-color);
     text-align: center;
     padding: 5px 0;
