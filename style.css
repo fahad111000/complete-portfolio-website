@@ -486,6 +486,10 @@ hr {
     margin-top: 20px;
     padding-bottom: 20px;
 }
+.about-me .my-intro .intrest i{
+    color: var(--hover-color);
+}
+
 
 .about-me .my-intro .intrest .hobbies {
     padding: 5px 0;
