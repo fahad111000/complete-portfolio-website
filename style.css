@@ -516,21 +516,19 @@ hr {
 .wrapper {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     padding: 30px 20px;
     gap: 20px;
+    border: 2px solid red;
 }
 
-.form-image {
-    /* border: 2px solid black; */
-    flex-grow: 2;
+.map  iframe{
+    width: 100%;
 }
 
 .form {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* border: 2px solid red; */
 }
 
 .form .input-cells {
@@ -558,6 +556,7 @@ textarea:focus {
 }
 
 textarea {
+    width: 100%;
     /* height: auto; */
     margin-top: 30px;
     padding: 10px;
