@@ -399,13 +399,15 @@ a:hover {
     font-size: 16px;
     padding: 5px 0;
 }
-
+.resume-section .qualification .fa-calendar-days {
+    color: var(--hover-color);
+}
 
 .resume-section .qualification .content span {
     font-size: 12px;
-    color: var(--hover-color);
+    color: var(--hover-temp-color);
     font-weight: 700;
-    margin: 100px 0;
+    margin: 100px 0 0 10px;
 }
 
 .resume-section .btn-container {
@@ -569,18 +571,15 @@ hr {
     border: 1px solid #fff;
     font-size: 22px;
     color: var(--hover-color);
-    padding: 5px;
+    padding: 8px;
+    /* border: 1px solid var(--hover-color); */
 }
 
-.contact-us-section .info .socail-icons a:nth-child(odd) {
-    color: red;
-
-}
 
 .contact-us-section .info .socail-icons .fa-brands:hover {
     cursor: pointer;
-    border: 1px solid var(--hover-color);
-    padding: 5px;
+    border: 1px solid var(--hover-temp-color);
+    /* padding: 5px; */
 }
 
 
@@ -653,5 +652,35 @@ textarea:focus {
 */
 
 .footer-section {
+    border-top: 1px solid var(--hover-color);
+    padding: 100px 0 0;
+}
+
+.footer {
+    padding: 50px 0;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .logo {
     border: 2px solid red;
+    margin: 0;
+}
+
+.footer ul {
+    /* border: 2px solid orange; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 30px;
+    gap: 30px;
+}
+
+.footer-section .sub-footer {
+    background: var(--hover-color);
+    text-align: center;
+    padding: 5px 0;
+    color: var(--primary-color);
 }
