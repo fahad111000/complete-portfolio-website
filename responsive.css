@@ -1,0 +1,161 @@
+/* ___________CUSTOME CLASSES___________ */
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--secondary-color);
+}
+
+.heading {
+    font-size: 40px;
+    color: var(--hover-color);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.span {
+    color: #3f3a3a;
+    padding: 0 0 5px;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.sub-span {
+    color: #3f3a3a;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.card-heading {
+    color: var(--hover-color);
+    font-size: 18px;
+}
+
+.card-sub-heading {
+    font-size: 13px;
+    color: #3f3a3a;
+    padding: 2px 0;
+}
+
+
+@media (1024px <=width <=1440px) {
+
+
+    /* Navbar */
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    .navbar .ul {
+        gap: 35px;
+        margin-left: 300px;
+    }
+
+    /*
+    ============================================= 
+                Intro Section  
+    =============================================
+    */
+
+
+    .intro {
+        padding: 100px 50px;
+    }
+
+    .intro .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .intro .content {
+        width: 60%;
+        padding: 10px 0;
+    }
+
+    .intro .container h1 {
+        font-size: 60px;
+    }
+
+    /*
+    ============================================= 
+                Service Section  
+    =============================================
+    */
+
+
+    .services-section .extra-info {
+        top: -80px;
+    }
+
+    /* *******SKILL********** */
+
+    .services-section .skill {
+        justify-content: center;
+
+    }
+
+    .services-section .skill-card {
+        flex: 1;
+        height: 250px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .services-section .skill-card .skill-content h3,
+    p {
+        padding: 10px 0;
+    }
+
+    /*
+    ============================================= 
+                Project Section  
+    =============================================
+    */
+
+    .project-card {
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .singel-project {
+        margin-bottom: 50px;
+        height: 220px;
+        width: 25%;
+    }
+
+    /*
+    ============================================= 
+                Contact Section  
+    =============================================
+    */
+
+
+
+    .contact-us-section .info .fa-solid {
+        padding: 25px;
+    }
+
+    .contact-us-section .info .socail-icons {
+        gap: 20px;
+    }
+
+    .contact-us-section .form .btn {
+        width: 25%;
+    }
+
+    
+.footer-section .sub-footer {
+    background: var(--hover-color);
+    text-align: center;
+    padding: 1px 0;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+
+}
