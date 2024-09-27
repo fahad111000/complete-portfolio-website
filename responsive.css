@@ -251,6 +251,9 @@ a {
 
 }
 
+
+/* _________________TABLET VERSION____________ */
+
 @media (768px <=width <=900px) {
     .logo {
         margin: 0;
@@ -260,4 +263,183 @@ a {
         gap: 35px;
         margin-left: 100px;
     }
+
+    .services-section .extra-info {
+        top: -80px;
+        border: 2px solid black;
+    }
+
+    /* *******SKILL********** */
+
+
+    .services-section .skill-card {
+        width: 45%;
+        height: 150px;
+    }
+
+    /*
+    ============================================= 
+    Project Section  
+    =============================================
+    */
+
+    .project-card {
+        justify-content: space-between;
+        width: 100%;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+
+    .singel-project {
+        margin-bottom: 50px;
+        height: 220px;
+        width: 30%;
+    }
+
+    /*    
+    ============================================= 
+    Resume Section  
+    =============================================
+    */
+
+    .resume-section {
+        border: 2px solid red;
+        margin-top: 20px;
+    }
+
+    .qualification {
+        border: 2px solid black;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .fa-user-graduate,
+    .fa-briefcase {
+        font-size: 27px;
+        color: var(--hover-color);
+    }
+
+
+    .resume-section .qualification .content {
+        padding: 10px;
+    }
+
+    .resume-section .qualification .card-heading {
+        font-size: 20px;
+    }
+
+    .resume-section .qualification .content::before {
+        height: 62px;
+        top: 20px;
+        left: -8px;
+    }
+
+
+    .resume-section .qualification .content .card-sub-heading {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .resume-section .qualification .content p {
+        font-size: 14px;
+        padding: 5px 0 1px;
+    }
+
+    .resume-section .btn-container {
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    /*
+    ============================================= 
+                About Section  
+    =============================================
+    */
+
+
+    .about-section .about-me .image {
+        flex: 1;
+    }
+
+    .about-section .about-me .my-intro {
+        flex: 3;
+    }
+
+    .about-me .my-intro .personal-data {
+        gap: 30px;
+    }
+
+    .about-me .my-intro .card-sub-heading {
+        font-size: 16px;
+    }
+
+    .about-me .my-intro p {
+        font-size: 14px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /*
+    ============================================= 
+                Contact Section  
+    =============================================
+    */
+
+    .contact-us-section .wrapper {
+        width: 95%;
+        gap: 0;
+
+    }
+
+    .contact-us-section .map iframe {
+        height: 300px;
+    }
+
+    .form-content {
+        justify-content: space-between;
+        padding: 10px 0 !important;
+        gap: 10px !important;
+        margin-top: 30px;
+    }
+
+
+
+    .contact-us-section .info .Singel-info {
+        padding: 0;
+        gap: 10px;
+    }
+
+    .contact-us-section .info .fa-solid {
+        font-size: 14px;
+        margin-top: 4px;
+    }
+
+
+    .contact-us-section .info .socail-icons .fa-brands {
+        font-size: 18px;
+    }
+
+    .contact-us-section .form .btn {
+        width: 25%;
+    }
+
+    /*  ============================================= 
+        Footer Section  
+         =============================================
+    */
+
+    .footer {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+
+    .footer ul {
+        gap: 30px;
+    }
+
+
+
 }

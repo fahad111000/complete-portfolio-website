@@ -65,6 +65,7 @@ a {
 
 
 .container {
+    border: 2px solid black;
     width: 90%;
     margin-inline: auto;
 }
