@@ -255,6 +255,12 @@ a {
 /* _________________TABLET VERSION____________ */
 
 @media (768px <=width <=900px) {
+
+    .intro {
+        padding: 100px 50px;
+        /* border: 2px solid red; */
+    }
+
     .logo {
         margin: 0;
     }
@@ -263,11 +269,17 @@ a {
         gap: 35px;
         margin-left: 100px;
     }
-
+    
     .services-section .extra-info {
+        margin-top: 50px;
         top: -80px;
-        border: 2px solid black;
     }
+
+    .intro .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    } 
 
     /* *******SKILL********** */
 
@@ -286,7 +298,6 @@ a {
     .project-card {
         justify-content: space-between;
         width: 100%;
-        border: 2px solid black;
         margin-top: 10px;
     }
 
@@ -303,12 +314,10 @@ a {
     */
 
     .resume-section {
-        border: 2px solid red;
         margin-top: 20px;
     }
 
     .qualification {
-        border: 2px solid black;
         justify-content: space-between;
         margin-top: 30px;
     }
@@ -774,6 +783,17 @@ a {
 /* _________________Mobile  VERSION____________ */
 @media (375px <=width <=425px) {
 
+    /* Utilites Classes */
+    .heading {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+
+    .span {
+        font-size: 35px;
+    }
+
+    /* ____________ */
     .logo {
         margin: 0;
     }
@@ -1129,6 +1149,19 @@ a {
 /* _________________Mobile  VERSION____________ */
 @media (320px <=width <=375px) {
 
+
+    /* Utilites Classes */
+    .heading {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+
+    .span {
+        font-size: 35px;
+    }
+
+    /* ____________ */
+
     .logo {
         margin: 0;
     }
@@ -1157,7 +1190,7 @@ a {
 
 
     .intro {
-        padding: 100px 0;
+        padding: 50px 0 100px;
     }
 
     .intro .container {
@@ -1343,6 +1376,7 @@ a {
         width: 100%;
         padding: 20px;
     }
+
     .about-me .my-intro .card-sub-heading {
         font-size: 13px;
     }
@@ -1430,7 +1464,7 @@ a {
 
 
     .contact-us-section .form .btn {
-        width: 45%;
+        width: 100%;
     }
 
     /*  ============================================= 

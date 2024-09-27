@@ -141,6 +141,7 @@ a:hover {
 .intro .container {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 
 }
 
