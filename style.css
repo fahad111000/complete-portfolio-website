@@ -65,7 +65,7 @@ a {
 
 
 .container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 90%;
     margin-inline: auto;
 }
@@ -260,7 +260,6 @@ a:hover {
 
 .services-section .skill-card:hover {
     box-shadow: 1px 1px 3px #7540b375;
-    box-shadow: 1px 1px 3px #7540b375;
     border-left: 3px solid var(--hover-color);
 
 }
@@ -387,7 +386,6 @@ a:hover {
 }
 
 .ed-block {
-
     display: flex;
     align-items: center;
 }

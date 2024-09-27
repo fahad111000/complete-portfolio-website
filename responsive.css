@@ -443,3 +443,331 @@ a {
 
 
 }
+
+
+
+/* _________________Mobile  VERSION____________ */
+@media (425px <=width <=768px) {
+
+    .logo {
+        margin: 0;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar .ul {
+        gap: 0;
+        margin-left: 0;
+        display: none;
+    }
+
+    .fa-bars {
+        display: block !important;
+        border: none !important;
+        font-size: 30px !important;
+    }
+
+    /*
+    ============================================= 
+                Intro Section  
+    =============================================
+    */
+
+
+    .intro {
+        padding: 100px 0;
+        /* border: 2px solid red; */
+    }
+
+    .intro .container {
+        width: 90%;
+    }
+
+    .intro .content {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .intro .container h1 {
+        font-size: 40px;
+    }
+
+
+    /*
+    ============================================= 
+    Services Section  
+    =============================================
+    */
+
+    .services-section .extra-info {
+        top: -100px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .services-section .singel-info {
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+    }
+
+
+    .services-section .singel-info .fa-solid {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .services-section .singel-info .job-experiance {
+        padding: 10px;
+    }
+
+    .services-section .singel-info h3 {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .services-section .singel-info h5 {
+        padding: 5px 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    /* *******SKILL********** */
+
+    .services-section .skill {
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .services-section .skill-card {
+        width: 250px;
+        height: 220px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .services-section .skill-card {
+        justify-content: center;
+    }
+
+    .services-section .skill-card .skill-content h3,
+    p {
+        padding: 10px 0;
+    }
+
+    .services-section .skill-card:hover {
+        box-shadow: 1px 1px 3px #7540b375;
+        border-bottom: 3px solid var(--hover-color);
+        border-left: none;
+
+    }
+
+    .services-section .skill-card .fa-solid,
+    .fa-python,
+    .fa-js {
+        font-size: 50px;
+        color: var(--hover-color);
+        padding: 10px;
+    }
+
+    /*
+    ============================================= 
+    Project Section  
+    =============================================
+    */
+
+    .project-section .projects ul {
+        /* border: 1px solid black; */
+        gap: 40px;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .project-card {
+        /* padding: 20px 0; */
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .singel-project {
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        width: 150px;
+        height: 180px;
+    }
+
+
+    /*    
+    ============================================= 
+    Resume Section  
+    =============================================
+    */
+
+    .resume-section {
+        margin-top: 20px;
+        width: 100% !important;
+    }
+
+    .education-block,
+    .experiance-block {
+        width: 100%;
+    }
+
+    .qualification {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ed-block {
+        justify-content: center;
+    }
+
+    .resume-section .qualification .content::before {
+        content: ' ';
+        height: 32px !important;
+        top: 50px !important;
+    }
+
+    .fa-user-graduate,
+    .fa-briefcase {
+        font-size: 27px;
+        color: var(--hover-color);
+    }
+
+
+    .resume-section .qualification .content {
+        padding: 10px;
+    }
+
+    .resume-section .qualification .card-heading {
+        font-size: 20px;
+    }
+
+    .resume-section .qualification .content::before {
+        height: 62px;
+        top: 20px;
+        left: -8px;
+    }
+
+
+    .resume-section .qualification .content .card-sub-heading {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .resume-section .qualification .content p {
+        font-size: 14px;
+        padding: 5px 0 1px;
+    }
+
+    .resume-section .btn-container {
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    /*
+    ============================================= 
+                About Section  
+    =============================================
+    */
+
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-section .about-me .my-intro {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+
+    /*
+    ============================================= 
+                Contact Section  
+    =============================================
+    */
+
+    .contact-us-section .wrapper {
+        width: 95%;
+        gap: 0;
+
+    }
+
+    .contact-us-section .map iframe {
+        height: 300px;
+    }
+
+    .contact-us-section .form-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .contact-us-section .info {
+        padding: 0;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contact-us-section .info .Singel-info {
+        width: 100%;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .singel-info-content {
+        text-align: center;
+    }
+
+    .contact-us-section .info .socail-icons {
+        gap: 20px;
+    }
+
+    .singel-info-content .card-sub-heading {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .singel-info-content p {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+
+
+    .contact-us-section .form .btn {
+        width: 35%;
+    }
+
+    /*  ============================================= 
+        Footer Section  
+         =============================================
+    */
+
+    .footer {
+        width: 100%;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+
+    .footer ul {
+        gap: 10px;
+    }
+
+
+
+}
