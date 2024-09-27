@@ -614,7 +614,7 @@ hr {
 
 .contact-us-section .form .input-cells {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     gap: 30px;
 }
