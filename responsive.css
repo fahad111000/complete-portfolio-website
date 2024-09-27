@@ -269,7 +269,7 @@ a {
         gap: 35px;
         margin-left: 100px;
     }
-    
+
     .services-section .extra-info {
         margin-top: 50px;
         top: -80px;
@@ -279,7 +279,7 @@ a {
         display: flex;
         justify-content: center;
         text-align: center;
-    } 
+    }
 
     /* *******SKILL********** */
 
@@ -510,6 +510,7 @@ a {
     */
 
     .services-section .extra-info {
+        background-color: var(--hover-color) !important;
         top: -100px;
         left: 0;
         width: 100%;
@@ -523,6 +524,17 @@ a {
         justify-content: center;
     }
 
+    #card-sub-heading,
+    #card-heading {
+        color: var(--primary-color);
+    }
+
+    .fa-medal,
+    .fa-list-check,
+    .fa-headset {
+        color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+    }
 
     .services-section .singel-info .fa-solid {
         font-size: 22px;
@@ -631,11 +643,12 @@ a {
 
     .qualification {
         flex-direction: column;
+        justify-content: flex-start;
         gap: 20px;
     }
 
     .ed-block {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .resume-section .qualification .content::before {
@@ -847,11 +860,13 @@ a {
     */
 
     .services-section .extra-info {
+        background-color: var(--hover-color);
         top: -100px;
         left: 0;
         width: 100%;
         padding: 0;
         box-shadow: none;
+
     }
 
     .services-section .singel-info {
@@ -864,6 +879,8 @@ a {
     .services-section .singel-info .fa-solid {
         font-size: 22px;
         padding: 10px;
+        border-color: var(--primary-color) !important;
+        color: var(--primary-color);
     }
 
     .services-section .singel-info .job-experiance {
@@ -873,9 +890,11 @@ a {
     .services-section .singel-info h3 {
         font-size: 15px;
         padding: 0;
+        color: var(--primary-color);
     }
 
     .services-section .singel-info h5 {
+        color: var(--primary-color);
         padding: 5px 0;
         font-size: 12px;
         text-align: center;
@@ -964,6 +983,8 @@ a {
     .education-block,
     .experiance-block {
         width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--hover-color);
     }
 
     .qualification {
@@ -972,13 +993,13 @@ a {
     }
 
     .ed-block {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .resume-section .qualification .content::before {
         content: ' ';
-        height: 32px !important;
-        top: 50px !important;
+        height: 62px !important;
+        top: 20px !important;
     }
 
     .fa-user-graduate,
@@ -1006,6 +1027,7 @@ a {
     .resume-section .qualification .content .card-sub-heading {
         font-size: 14px;
         padding: 5px 0;
+        font-weight: 800;
     }
 
     .resume-section .qualification .content p {
@@ -1214,6 +1236,7 @@ a {
     */
 
     .services-section .extra-info {
+        background-color: var(--hover-color) !important;
         top: -100px;
         left: 0;
         width: 100%;
@@ -1228,9 +1251,12 @@ a {
     }
 
 
+
     .services-section .singel-info .fa-solid {
         font-size: 22px;
         padding: 10px;
+        border-color: var(--primary-color);
+        color: var(--primary-color);
     }
 
     .services-section .singel-info .job-experiance {
@@ -1238,11 +1264,13 @@ a {
     }
 
     .services-section .singel-info h3 {
+        color: var(--primary-color);
         font-size: 15px;
         padding: 0;
     }
 
     .services-section .singel-info h5 {
+        color: var(--primary-color);
         padding: 5px 0;
         font-size: 12px;
         text-align: center;
