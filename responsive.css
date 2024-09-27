@@ -148,14 +148,116 @@ a {
         width: 25%;
     }
 
-    
-.footer-section .sub-footer {
-    background: var(--hover-color);
-    text-align: center;
-    padding: 1px 0;
-    color: var(--primary-color);
-    font-size: 12px;
+
+    .footer-section .sub-footer {
+        background: var(--hover-color);
+        text-align: center;
+        padding: 1px 0;
+        color: var(--primary-color);
+        font-size: 12px;
+    }
+
+
 }
 
+/* ___________________TABLET_____________________ */
 
+@media (900px <=width <=1024px) {
+
+
+    .navbar .ul {
+        gap: 35px;
+        margin-left: 150px;
+    }
+
+    /*
+    ============================================= 
+                Service Section  
+    =============================================
+    */
+
+    .services-section .extra-info {
+        top: -80px;
+    }
+
+    /* *******SKILL********** */
+
+
+    .services-section .skill-card {
+        width: 45%;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .services-section .skill-card .skill-content h3,
+    p {
+        padding: 10px 0;
+    }
+
+    /*
+    ============================================= 
+                Project Section  
+    =============================================
+    */
+
+    .project-card {
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .singel-project {
+        margin-bottom: 50px;
+        height: 220px;
+        width: 25%;
+    }
+
+
+    /*
+    ============================================= 
+                Contact Section  
+    =============================================
+    */
+
+    .contact-us-section .info .fa-solid {
+        padding: 22px;
+    }
+
+    .contact-us-section .form .btn {
+        width: 35%;
+    }
+
+    /*
+    ============================================= 
+                Footer Section  
+    =============================================
+    */
+
+    .footer {
+        width: 95%;
+        justify-content: space-between;
+    }
+
+
+    .footer ul {
+        gap: 20px;
+    }
+
+    .footer-section .sub-footer {
+        background: var(--hover-color);
+        color: var(--primary-color);
+        font-size: 12px;
+    }
+
+}
+
+@media (768px <=width <=900px) {
+    .logo {
+        margin: 0;
+    }
+
+    .navbar .ul {
+        gap: 35px;
+        margin-left: 100px;
+    }
 }
