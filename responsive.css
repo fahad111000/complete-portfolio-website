@@ -829,6 +829,8 @@ a {
 
     .navbar {
         width: 100%;
+        position: relative;
+        z-index: 2;
     }
 
     .navbar ul li a {
@@ -839,15 +841,16 @@ a {
         position: absolute;
         background-color: var(--hover-color);
         margin-left: 0;
+        padding: 50px 0;
         width: 100%;
-        height: 100%;
-        justify-content: space-evenly;
+        justify-content: start;
         align-items: center;
         flex-direction: column;
         top: 64px;
         left: -100%;
         transition: 0.4s;
         z-index: 9999;
+        gap: 30px;
     }
 
     .fa-bars {

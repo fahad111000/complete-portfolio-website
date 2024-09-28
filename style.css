@@ -117,7 +117,6 @@ a:hover {
     font-size: 25px;
     color: var(--hover-color);
     display: none;
-    border: 2px solid red;
 }
 
 .fa-xmark {
@@ -127,7 +126,8 @@ a:hover {
 .ul-active {
     position: absolute;
     left: 0 !important;
-    /* width: 100%; */
+    width: 100%;
+    height: 100vh;
 }
 
 /* _______________________________________ */
