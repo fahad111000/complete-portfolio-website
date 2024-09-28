@@ -1,5 +1,3 @@
-console.log("Works!")
-
 var unorderList = document.getElementById('unorder');
 var humberger = document.getElementById('bars');
 
