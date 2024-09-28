@@ -1047,21 +1047,22 @@ a {
     }
 
     .resume-section .qualification .content::before {
-        height: 62px;
-        top: 20px;
+        height: 72px !important;
+        top: 22px !important;
         left: -8px;
     }
 
 
     .resume-section .qualification .content .card-sub-heading {
-        font-size: 14px;
+        font-size: 16px !important;
+        font-weight: 800;
         padding: 5px 0;
         font-weight: 800;
     }
 
     .resume-section .qualification .content p {
-        font-size: 14px;
-        padding: 5px 0 1px;
+        font-size: 17px;
+        padding: 5px 0 4px;
     }
 
     .resume-section .btn-container {
