@@ -457,6 +457,40 @@ a {
 /* _________________Mobile  VERSION____________ */
 @media (425px <=width <=768px) {
 
+    .heading {
+        font-size: 40px;
+        color: var(--hover-color);
+        font-weight: 700;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .span {
+        color: #3f3a3a;
+        padding: 0 0 5px;
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+
+    .sub-span {
+        color: #3f3a3a;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
+    .card-heading {
+        color: var(--hover-color);
+        font-size: 18px;
+    }
+
+    .card-sub-heading {
+        font-size: 13px;
+        color: #3f3a3a;
+        padding: 2px 0;
+    }
+
     .logo {
         margin: 0;
     }
@@ -841,7 +875,7 @@ a {
         position: absolute;
         background-color: var(--hover-color);
         margin-left: 0;
-        padding: 5  0px 0;
+        padding: 5 0px 0;
         width: 100%;
         justify-content: start;
         align-items: center;
@@ -1125,15 +1159,26 @@ a {
         padding: 0;
         gap: 10px;
         align-items: center;
+        flex-direction: row;
+        border: 2px solid red;
     }
-
+    
     .contact-us-section .info .Singel-info {
+        border: 2px solid red;
         width: 100%;
         gap: 10px;
         flex-direction: column;
         align-items: center;
+    }   
+
+
+    .contact-us-section .info .Singel-info:nth-child(3) {
+        display: none !important;
     }
 
+    .contact-us-section .info .socail-icons{
+        display: none;
+    }
 
     .singel-info-content {
         text-align: center;
