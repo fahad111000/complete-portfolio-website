@@ -664,7 +664,7 @@ hr {
 
 .contact-us-section .form .input-cells input:focus,
 textarea:focus {
-    box-shadow: 0 0 1px 1px rgba(137, 3, 179, 0.61);
+    box-shadow: 0 0 1px 1px var(--hover-color);
 }
 
 .contact-us-section textarea {
