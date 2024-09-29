@@ -841,7 +841,7 @@ a {
         position: absolute;
         background-color: var(--hover-color);
         margin-left: 0;
-        padding: 50px 0;
+        padding: 5  0px 0;
         width: 100%;
         justify-content: start;
         align-items: center;
