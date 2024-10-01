@@ -55,10 +55,10 @@ a {
     }
 
     /*
-    ============================================= 
-                Intro Section  
-    =============================================
-    */
+============================================= 
+    Intro Section  
+=============================================
+*/
 
 
     .intro {
@@ -80,10 +80,10 @@ a {
     }
 
     /*
-    ============================================= 
-                Service Section  
-    =============================================
-    */
+============================================= 
+    Service Section  
+=============================================
+*/
 
 
     .services-section .extra-info {
@@ -110,16 +110,16 @@ a {
     }
 
     /*
-    ============================================= 
-                Project Section  
-    =============================================
-    */
+============================================= 
+    Project Section  
+=============================================
+*/
 
     .project-card {
         justify-content: space-around;
         width: 100%;
         margin-top: 50px;
-        gap: 30px;
+        /* gap: 30px; */
     }
 
     .singel-project {
@@ -129,10 +129,10 @@ a {
     }
 
     /*
-    ============================================= 
-                Contact Section  
-    =============================================
-    */
+============================================= 
+    Contact Section  
+=============================================
+*/
 
 
 
@@ -159,7 +159,6 @@ a {
 
 
 }
-
 /* ___________________TABLET_____________________ */
 
 @media (900px <=width <=1024px) {
@@ -1019,19 +1018,25 @@ a {
     }
 
     .project-card {
-        /* padding: 20px 0; */
         display: flex;
         width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
         margin-top: 50px;
     }
 
     .singel-project {
-        /* border: 2px solid red; */
-        border-radius: 10px;
+        border-radius: 5px;
         width: 150px;
         height: 180px;
+    }
+
+    .singel-project img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s ease-in;
+        object-fit: fill;
     }
 
 
