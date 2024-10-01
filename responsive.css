@@ -159,6 +159,7 @@ a {
 
 
 }
+
 /* ___________________TABLET_____________________ */
 
 @media (900px <=width <=1024px) {
@@ -551,6 +552,10 @@ a {
         font-size: 40px;
     }
 
+    .intro .container .image {
+        display: none;
+    }
+
 
     /*
     ============================================= 
@@ -749,15 +754,28 @@ a {
     =============================================
     */
 
+    .about-section {
+        margin-top: 100px;
+    }
+  
 
-    .about-me {
-        flex-direction: column;
+    .about-section .about-me {
+        margin: 20px auto 0;
+        gap: 20px;
     }
 
     .about-section .about-me .my-intro {
         width: 100%;
         padding: 10px;
+        
     }
+
+    .about-section .about-me .image {
+        width: 90%;
+        margin: 0 auto;
+        border: 2px solid #a0c6ee75;
+    }
+
 
 
 
@@ -917,6 +935,12 @@ a {
         font-size: 40px;
     }
 
+    .intro .container .image {
+        display: none !important;
+    }
+
+
+
 
     /*
     ============================================= 
@@ -1026,8 +1050,9 @@ a {
     }
 
     .singel-project {
+        margin: 0 auto;
         border-radius: 5px;
-        width: 150px;
+        width: 300px;
         height: 180px;
     }
 
@@ -1036,7 +1061,6 @@ a {
         width: 100%;
         height: 100%;
         transition: 0.2s ease-in;
-        object-fit: fill;
     }
 
 
@@ -1123,6 +1147,21 @@ a {
         flex-direction: column;
         width: 100%;
     }
+    .about-section {
+        margin-top: 100px;
+    }
+  
+
+    .about-section .about-me {
+        gap: 20px;
+    }
+
+
+    .about-section .about-me .image {
+        width: 90%;
+        margin: 0 auto;
+        border: 2px solid #a0c6ee75;
+    }
 
     .about-section .about-me .my-intro {
         width: 100%;
@@ -1132,6 +1171,8 @@ a {
     .about-me .my-intro .intrest .hobbies {
         gap: 30px;
     }
+
+    
 
 
 

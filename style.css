@@ -23,7 +23,7 @@ body {
     /* --hover-color: #5584b0; */
     /* --hover-color: #1e90ff; */
     /* --hover-color: hsl(212, 100%, 50%); */
-    --hover-temp-color: rgb(103, 35, 148);
+    --hover-temp-color: #053569;
 }
 
 /* ___________CUSTOME CLASSES___________ */
@@ -42,7 +42,7 @@ a {
 }
 
 .span {
-    color: #3f3a3a;
+    color: var(--hover-color) !important;
     padding: 0 0 5px;
     font-size: 40px;
     font-weight: 700;
@@ -193,9 +193,19 @@ a:hover {
     background-color: var(--hover-temp-color);
 }
 
-/* .intro .container .image {
-    border: 2px solid red;
-} */
+.intro .container .image {
+    border: 1px solid #a0c6ee75;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.intro .container .image img {
+    /* border: 12px solid var(--hover-temp-color) ; */
+    width: 90%;
+    object-fit: cover;
+}
 
 /*
 ============================================= 
@@ -527,7 +537,13 @@ hr {
 
 
 .about-section .about-me .image {
-    border: 2px solid orange;
+    width: 50%;
+    border: 1px solid #a0c6ee75;
+}
+
+.about-section .about-me .image img {
+    width: 100%;
+    /* object-fit: cover; */
 }
 
 .about-section .about-me .my-intro {
