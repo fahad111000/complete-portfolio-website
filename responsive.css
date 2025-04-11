@@ -463,6 +463,7 @@ a {
         font-weight: 700;
         text-align: center;
         margin-top: 100px;
+        border: 2px solid red;
     }
 
     .span {
@@ -525,6 +526,7 @@ a {
         display: block !important;
         border: none !important;
         font-size: 30px !important;
+        border: 2px solid red;
     }
 
     /*
@@ -757,7 +759,7 @@ a {
     .about-section {
         margin-top: 100px;
     }
-  
+
 
     .about-section .about-me {
         margin: 20px auto 0;
@@ -767,7 +769,7 @@ a {
     .about-section .about-me .my-intro {
         width: 100%;
         padding: 10px;
-        
+
     }
 
     .about-section .about-me .image {
@@ -1147,10 +1149,11 @@ a {
         flex-direction: column;
         width: 100%;
     }
+
     .about-section {
         margin-top: 100px;
     }
-  
+
 
     .about-section .about-me {
         gap: 20px;
@@ -1167,6 +1170,7 @@ a {
         width: 100%;
         padding: 20px;
     }
+
     .about-section .about-me .card-heading {
         width: 100%;
         text-align: center;
@@ -1176,7 +1180,7 @@ a {
         gap: 30px;
     }
 
-    
+
 
 
 

@@ -35,7 +35,6 @@ jsButton.addEventListener('click', (e) => {
     e.preventDefault();
     singelProject.forEach((project) => {
         if (project.classList.contains("js")) {
-            console.log("wor")
             project.style.display = 'block'
         }
 
