@@ -882,6 +882,8 @@ a {
 
     .navbar {
         width: 100%;
+        position: fixed;
+        z-index: 9999;
     }
 
     .navbar ul li {
@@ -905,6 +907,7 @@ a {
         height: 100vh;
         transition: 0.4s;
         gap: 30px;
+        z-index: 9998;
     }
 
     .fa-bars {
