@@ -11,6 +11,9 @@ body {
     background-color: hsla(221, 88%, 75%, 0.075);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
 
 :root {
     --primary-color: #ffffff;
@@ -125,13 +128,13 @@ a:hover {
 }
 
 .ul-active {
-    position: absolute;
+    /* position: absolute; */
     left: 0 !important;
     bottom: 0 !important;
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     background-color: var(--hover-temp-color);
-    z-index: 1;
+    /* z-index: 999; */
 }
 
 /* _______________________________________ */
@@ -151,7 +154,6 @@ a:hover {
 .intro .container {
     display: flex;
     justify-content: space-between;
-
 }
 
 
@@ -207,7 +209,7 @@ a:hover {
 
 /*
 ============================================= 
-               Service Section  
+Service Section  
 =============================================
 */
 
@@ -223,7 +225,7 @@ a:hover {
 /* *******EXTRA INFORMATION********** */
 
 .services-section .extra-info {
-    background-color: var(--hover-color);
+    background-color: var(--hover);
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -531,9 +533,9 @@ hr {
     margin: 20px auto 0;
     /* border: 2px solid black; */
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-    gap: 130px;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 100px;
 }
 
 
@@ -558,6 +560,11 @@ hr {
     padding: 10px 0;
 }
 
+.about-me .my-intro p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
 .about-me .my-intro .personal-data {
     /* border: 2px solid black; */
     margin-top: 10px;
@@ -571,9 +578,8 @@ hr {
 }
 
 .about-me .my-intro .intrest {
-
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .about-me .my-intro .intrest i {
@@ -584,7 +590,9 @@ hr {
 .about-me .my-intro .intrest .hobbies {
     padding: 5px 0;
     display: flex;
-    gap: 30px;
+    gap: 70px;
+    margin-top: 10px;
+    /* border: 2px solid black; */
 }
 
 .about-me .my-intro .intrest span {
@@ -655,7 +663,7 @@ hr {
     font-size: 22px;
     color: var(--hover-color);
     padding: 8px;
-    border: 1px solid  hsla(221, 88%, 75%, 0.075);
+    border: 1px solid hsla(221, 88%, 75%, 0.075);
 }
 
 

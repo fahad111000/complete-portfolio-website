@@ -27,7 +27,6 @@ htmlCssButton.addEventListener('click', (e) => {
 
         }
     })
-    // jsButton.classList.add("disabled");
 
 })
 
@@ -43,7 +42,6 @@ jsButton.addEventListener('click', (e) => {
 
         }
     })
-    // htmlBtn.classList.add("disabled");
 })
 
 
@@ -53,6 +51,7 @@ function navIcon() {
     console.log("Button Works!");
     unorderList.classList.toggle('ul-active')
     humberger.classList.toggle('fa-xmark')
+    document.body.classList.toggle('no-scroll');
 }
 
 
