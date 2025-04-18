@@ -8,6 +8,10 @@ let allProjects = document.getElementById('allProjects');
 
 allProjects.addEventListener('click', (e) => {
     e.preventDefault();
+    allProjects.classList.add('active');
+    htmlCssButton.classList.remove('active');
+    jsButton.classList.remove('active');
+
     singelProject.forEach((project) => {
         project.style.display = 'block'
     });
@@ -17,6 +21,9 @@ allProjects.addEventListener('click', (e) => {
 
 htmlCssButton.addEventListener('click', (e) => {
     e.preventDefault();
+    htmlCssButton.classList.add('active');
+    allProjects.classList.remove('active');
+    jsButton.classList.remove('active');
     singelProject.forEach((project) => {
         if (project.classList.contains("html")) {
             project.style.display = 'block'
@@ -32,6 +39,9 @@ htmlCssButton.addEventListener('click', (e) => {
 
 jsButton.addEventListener('click', (e) => {
     e.preventDefault();
+    jsButton.classList.add('active')
+    htmlCssButton.classList.remove('active')
+    allProjects.classList.remove('active')
     singelProject.forEach((project) => {
         if (project.classList.contains("js")) {
             project.style.display = 'block'
