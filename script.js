@@ -6,6 +6,19 @@ let jsButton = document.getElementById('jsProjects');
 let singelProject = document.querySelectorAll('.singel-project');
 let allProjects = document.getElementById('allProjects');
 
+let navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(navlink => {
+    console.log("auto")
+    navlink.addEventListener('click', () => {
+        console.log("autosss")
+        navLinks.forEach(nav => {
+            nav.classList.remove('active')
+        })
+        navlink.classList.add('active')
+    })
+})
+
+
 allProjects.addEventListener('click', (e) => {
     e.preventDefault();
     allProjects.classList.add('active');
@@ -19,6 +32,7 @@ allProjects.addEventListener('click', (e) => {
 })
 
 
+// HTML Buttons
 htmlCssButton.addEventListener('click', (e) => {
     e.preventDefault();
     htmlCssButton.classList.add('active');

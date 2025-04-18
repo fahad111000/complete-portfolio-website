@@ -72,7 +72,6 @@ a {
 
 
 .container {
-    /* border: 2px solid black; */
     width: 90%;
     margin-inline: auto;
 }
@@ -85,7 +84,6 @@ a {
     justify-content: space-between;
     padding: 5px 40px;
     transition: 0.3s;
-    /* border: 2px solid red; */
 
 }
 
@@ -93,8 +91,6 @@ a {
     list-style: none;
     display: flex;
     gap: 50px;
-    /* border: 2px solid green; */
-    /* margin-left:400px ; */
 }
 
 
@@ -131,13 +127,10 @@ a:hover {
 }
 
 .ul-active {
-    /* position: absolute; */
     left: 0 !important;
     bottom: 0 !important;
-    /* width: 100%; */
     height: 100vh;
     background-color: var(--hover-temp-color);
-    /* z-index: 999; */
 }
 
 /* _______________________________________ */
@@ -151,7 +144,6 @@ a:hover {
 
 .intro {
     padding: 100px 50px;
-    /* border: 2px solid red; */
 }
 
 .intro .container {
@@ -205,7 +197,6 @@ a:hover {
 }
 
 .intro .container .image img {
-    /* border: 12px solid var(--hover-temp-color) ; */
     width: 90%;
     object-fit: cover;
 }
@@ -228,7 +219,7 @@ Service Section
 /* *******EXTRA INFORMATION********** */
 
 .services-section .extra-info {
-    background-color: var(--hover);
+    background-color: var(--hover-color);
     position: absolute;
     display: flex;
     justify-content: space-around;
