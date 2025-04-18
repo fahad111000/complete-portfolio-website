@@ -8,9 +8,7 @@ let allProjects = document.getElementById('allProjects');
 
 let navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(navlink => {
-    console.log("auto")
     navlink.addEventListener('click', () => {
-        console.log("autosss")
         navLinks.forEach(nav => {
             nav.classList.remove('active')
         })
