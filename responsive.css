@@ -882,8 +882,11 @@ a {
 
     .navbar {
         width: 100%;
-        /* position: fixed;
-        z-index: 9999; */
+        position: fixed;
+        z-index: 9999;
+        background-color: #ffffff;
+        /* border-bottom: 2px solid var(--hover-color); */
+        box-shadow: 1px 1px 5px 1px #acacac33;
     }
 
     .navbar ul li {
