@@ -75,7 +75,7 @@ jsButton.addEventListener('click', (e) => {
 function navIcon() {
     unorderList.classList.toggle('ul-active')
     humberger.classList.toggle('fa-xmark')
-    document.body.classList.add('no-scroll');
+    document.body.classList.toggle('no-scroll');
 }
 
 
