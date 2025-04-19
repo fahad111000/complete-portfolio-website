@@ -1,12 +1,15 @@
-var unorderList = document.getElementById('unorder');
-var humberger = document.getElementById('bars');
-
+let unorderList = document.getElementById('unorder');
+let humberger = document.getElementById('bars');
 let htmlCssButton = document.getElementById('htmlCssProjects');
 let jsButton = document.getElementById('jsProjects');
 let singelProject = document.querySelectorAll('.singel-project');
 let allProjects = document.getElementById('allProjects');
-
 let navLinks = document.querySelectorAll('.nav-link');
+
+humberger.addEventListener('click', navIcon)
+
+
+
 navLinks.forEach(navlink => {
     navlink.addEventListener('click', () => {
         navLinks.forEach(nav => {
@@ -71,9 +74,8 @@ jsButton.addEventListener('click', (e) => {
 
 function navIcon() {
     unorderList.classList.toggle('ul-active')
-
     humberger.classList.toggle('fa-xmark')
-    document.body.classList.toggle('no-scroll');
+    document.body.classList.add('no-scroll');
 }
 
 
