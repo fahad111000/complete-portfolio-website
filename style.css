@@ -427,6 +427,7 @@ Service Section
 
 .singel-project:hover .overlay {
     opacity: 1;
+    /* width: 100%; */
     height: 100%;
     cursor: pointer;
 }
