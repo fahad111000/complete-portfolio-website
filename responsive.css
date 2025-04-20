@@ -54,6 +54,14 @@ a {
         margin-left: 300px;
     }
 
+    .bars .fa-bars,
+    .fa-xmark {
+        cursor: pointer;
+        font-size: 25px;
+        color: var(--hover-color);
+        display: none;
+    }
+
     /*
 ============================================= 
     Intro Section  
@@ -893,7 +901,7 @@ a {
         margin: 10px 0;
     }
 
-    .navbar ul li  a{
+    .navbar ul li a {
         color: aliceblue;
         margin: 10px 0;
     }
@@ -918,6 +926,19 @@ a {
         border: none !important;
         font-size: 30px !important;
     }
+
+
+    .resume .btn {
+        padding: 10px;
+        width: 150px;
+        background-color:var(--primary-color);
+        color: var(--hover-color);        
+    }
+
+    .resume .btn a {
+        color: var(--hover-color);
+    }
+
 
     /*
     ============================================= 

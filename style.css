@@ -114,6 +114,26 @@ a:hover {
     color: var(--hover-color);
 }
 
+.resume button {
+    align-items: center;
+}
+
+.ri-download-2-line {
+    font-size: 16px;
+    margin-right:2px ;
+}
+
+.resume a {
+ font-size: 13px;
+ color: #fff;
+}
+
+.resume .btn  {
+    width: 100%;
+    border: 1px solid var(--hover-color);
+    padding: 8px;
+}
+
 .bars .fa-bars,
 .fa-xmark {
     cursor: pointer;
@@ -175,7 +195,7 @@ a:hover {
     color: rgb(56, 54, 54);
 }
 
-.intro .container .btn {
+ .btn {
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -184,7 +204,7 @@ a:hover {
     color: var(--primary-color);
 }
 
-.intro .container .btn:hover {
+.btn:hover {
     background-color: var(--hover-temp-color);
 }
 
@@ -268,7 +288,7 @@ Service Section
 
 .services-section .skill-card {
     padding: 20px;
-    display: flex;
+    display: flex;  
     align-items: center;
     background-color: var(--primary-color);
     /* border-radius: 10px; */
@@ -492,14 +512,13 @@ Service Section
     padding: 50px 0 0;
 }
 
-.resume-section .btn {
-    padding: 12px;
-    border: none;
-    border-radius: 3px;
-    font-weight: 600;
-    color: var(--primary-color);
-    background-color: var(--hover-color);
-    cursor: pointer;
+.resume-section a {
+    color: #fff;
+    margin-left: 2px;
+}
+
+.resume-section button  .btn{
+    padding: 8px;
 }
 
 .resume-section .btn:hover {
@@ -510,7 +529,6 @@ Service Section
 
 hr {
     margin-top: 100px;
-    /* color: red; */
     width: 2px;
     background-color: var(--hover-color);
 }
