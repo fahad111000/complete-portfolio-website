@@ -13,8 +13,9 @@ humberger.addEventListener('click', navIcon)
 navLinks.forEach(navlink => {
     navlink.addEventListener('click', () => {
         navLinks.forEach(nav => {
-            nav.classList.remove('active')
-        })
+            nav.classList.remove('active');
+
+        });
         navlink.classList.add('active')
     })
 })
@@ -22,6 +23,7 @@ navLinks.forEach(navlink => {
 
 allProjects.addEventListener('click', (e) => {
     e.preventDefault();
+
     allProjects.classList.add('active');
     htmlCssButton.classList.remove('active');
     jsButton.classList.remove('active');
@@ -71,13 +73,19 @@ jsButton.addEventListener('click', (e) => {
 
 
 
-
 function navIcon() {
-    unorderList.classList.toggle('ul-active')
     humberger.classList.toggle('fa-xmark')
+    unorderList.classList.toggle('ul-active');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            unorderList.classList.remove('ul-active')
+            humberger.classList.remove('fa-xmark')
+        })
+    })
+
     document.body.classList.toggle('no-scroll');
 }
-
 
 //
 
