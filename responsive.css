@@ -1037,6 +1037,7 @@ a {
 
     .services-section .skill-card {
         justify-content: center;
+        border-bottom: 2px solid var(--hover-color);
     }
 
     .services-section .skill-card .skill-content h3,
@@ -1045,8 +1046,8 @@ a {
     }
 
     .services-section .skill-card:hover {
-        box-shadow: 1px 1px 3px #7540b375;
-        border-bottom: 3px solid var(--hover-color);
+        box-shadow: none;
+        border-bottom: none;
         border-left: none;
 
     }

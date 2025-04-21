@@ -84,7 +84,7 @@ function navIcon() {
         })
     })
 
-    document.body.classList.toggle('no-scroll');
+    document.body.classList.toggle('no-scroll'); 
 }
 
 //
