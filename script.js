@@ -7,6 +7,26 @@ let singelProject = document.querySelectorAll('.singel-project');
 let allProjects = document.getElementById('allProjects');
 let navLinks = document.querySelectorAll('.nav-link');
 
+document.addEventListener("DOMContentLoaded", () => {
+    const experinces = [
+        { id: 'years', max: 3, speed: 200 },
+        { id: 'projects', max: 50, speed: 60 }
+    ]
+
+    experinces.forEach(({ id, max, speed }) => {
+        let count = 1;
+        let el = document.getElementById(id)
+
+        let timer = setInterval(() => {
+            el.innerText = count;
+            count++;
+            if (count > max) {
+                clearInterval(timer);
+            }
+        }, speed)
+    })
+})
+
 
 humberger.addEventListener('click', navIcon)
 
@@ -27,7 +47,7 @@ function navIcon() {
 window.addEventListener('scroll', () => {
     if (scrollY > 800) {
         backTop.style.display = 'block';
-        
+
     }
     else {
         backTop.style.display = 'none';
