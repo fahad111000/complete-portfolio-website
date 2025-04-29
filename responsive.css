@@ -184,26 +184,28 @@ a {
 
     .navbar ul li a {
         font-size: 10px;
-    }.resume button {
+    }
+
+    .resume button {
         align-items: center;
     }
-    
+
     .ri-download-2-line {
         font-size: 10px;
         margin-right: 2px;
     }
-    
+
     .resume a {
         font-size: 10px;
         color: #fff;
     }
-    
+
     .resume .btn {
         width: 100%;
         border: 1px solid var(--hover-color);
         padding: 8px;
     }
-    
+
     .bars .fa-bars,
     .fa-xmark {
         cursor: pointer;
@@ -212,7 +214,7 @@ a {
         display: none;
     }
 
-   
+
     .fa-bars {
         /* display: block !important; */
         border: none !important;
@@ -1710,7 +1712,6 @@ a {
         border-radius: 5px;
         width: 300px;
         height: 180px;
-        pointer-events: none;
     }
 
 
@@ -1719,9 +1720,11 @@ a {
         object-fit: contain;
         width: 100%;
         height: 100%;
-        transition: 0.2s ease-in;
     }
 
+    .overlay {
+        display: none;
+    }
 
     /*    
     ============================================= 
@@ -1986,44 +1989,59 @@ a {
     }
 
     /* ____________ */
-
+    /* ____________ */
     .logo {
         margin: 0;
     }
 
     .navbar {
         width: 100%;
+        position: fixed;
+        z-index: 9999;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 5px 1px #acacac33;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
     }
 
     .navbar ul li a {
-        color: var(--primary-color);
+        color: aliceblue;
+        margin: 10px 0;
     }
 
     .navbar .ul {
-        position: absolute;
+        position: fixed;
         background-color: var(--hover-color);
-        margin-left: 0;
+        padding: 5 0px 0;
         width: 100%;
-        height: 100vh;
-        justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        top: 64px;
+        top: 57px;
         left: -100%;
+        height: 100vh;
         transition: 0.4s;
-
-    }
-
-    .navbar .ul {
-        gap: 0;
-        margin-left: 0;
-        display: none;
+        gap: 30px;
+        z-index: 9998;
     }
 
     .fa-bars {
         display: block !important;
         border: none !important;
         font-size: 30px !important;
+    }
+
+
+    .resume .btn {
+        padding: 10px;
+        width: 150px;
+        background-color: var(--primary-color);
+        color: var(--hover-color);
+    }
+
+    .resume .btn a {
+        color: var(--hover-color);
     }
 
     /*
