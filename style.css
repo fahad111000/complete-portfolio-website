@@ -9,13 +9,13 @@ html {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: syste1m-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* background-color: #fcfafa8a */
     background-color: hsla(221, 88%, 75%, 0.075);
 }
 
 body.no-scroll {
-    overflow: hidden;
+    overflow: auto;
 }
 
 :root {
@@ -71,6 +71,27 @@ a {
 /* __________________________________________ */
 
 
+/* __________________________________ */
+
+/* ScrollBar width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar background */
+::-webkit-scrollbar-track {
+    background-color: #d3d5d634;
+    /* border-radius: 10px; */
+
+}
+
+/* scrollbar ka handle */
+::-webkit-scrollbar-thumb {
+    background-color: #033974e7;
+    border-radius: 10px;
+}
+
+
 .container {
     width: 90%;
     margin-inline: auto;
@@ -79,6 +100,7 @@ a {
 
 
 .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,7 +112,6 @@ a {
 .navbar .ul {
     list-style: none;
     display: flex;
-    gap: 50px;
 }
 
 
@@ -111,6 +132,7 @@ a:hover {
 }
 
 .active {
+    font-weight: bold;
     color: var(--hover-color);
 }
 
@@ -120,15 +142,15 @@ a:hover {
 
 .ri-download-2-line {
     font-size: 16px;
-    margin-right:2px ;
+    margin-right: 2px;
 }
 
 .resume a {
- font-size: 13px;
- color: #fff;
+    font-size: 13px;
+    color: #fff;
 }
 
-.resume .btn  {
+.resume .btn {
     width: 100%;
     border: 1px solid var(--hover-color);
     padding: 8px;
@@ -162,6 +184,31 @@ a:hover {
 =============================================
 */
 
+.backTop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% !important;
+    z-index: 999;
+
+
+}
+
+.backTop i {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.backTop:hover i {
+    transform: translateY(-5px);
+}
+
 .intro {
     padding: 100px 50px;
 }
@@ -189,13 +236,15 @@ a:hover {
 .intro .container .parag {
     color: rgb(90, 89, 89);
     padding: 10px 0 20px;
+    /* border: 2px solid red; */
+    width: 80%;
 }
 
 .intro .container span {
     color: rgb(56, 54, 54);
 }
 
- .btn {
+.btn {
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -210,7 +259,7 @@ a:hover {
 
 .intro .container .image {
     border: 1px solid #a0c6ee75;
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
 
@@ -219,6 +268,16 @@ a:hover {
 .intro .container .image img {
     width: 90%;
     object-fit: cover;
+}
+
+.intro .content .socail-icons i {
+    /* border: 2px solid red; */
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.fa-linkedin {
+    color: #053569;
 }
 
 /*
@@ -279,7 +338,7 @@ Service Section
     margin-top: 70px;
     padding: 20px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
@@ -288,18 +347,19 @@ Service Section
 
 .services-section .skill-card {
     padding: 20px;
-    display: flex;  
+    display: flex;
     align-items: center;
     background-color: var(--primary-color);
     /* border-radius: 10px; */
     transition: 0.1s ease-in;
     cursor: pointer;
     border: 3px solid #fff;
+    border-bottom: 3px solid var(--hover-color);
+    /* border-left: 3px solid var(--hover-color); */
 }
 
 .services-section .skill-card:hover {
     box-shadow: 0 0 5px 1px hsla(216, 79%, 74%, 0.247);
-    border-bottom: 3px solid var(--hover-color);
     border-radius: 3px;
 }
 
@@ -412,10 +472,40 @@ Service Section
     left: 0;
     right: 0;
     height: 0;
-    color: var(--primary-color);
-    background-color: rgba(43, 42, 41, 0.377);
+    /* width: 150px; */
+    color: var(--primary);
+    background: linear-gradient(rgba(0, 0, 0, 0.10), #022953fa);
     transition: 0.3s;
     z-index: 1;
+}
+
+.languages {
+    margin-top: 20px;
+}
+
+.ri {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.s {
+    color: orangered;
+}
+
+.css {
+    color: blue;
+}
+
+.github {
+    color: #fff;
+}
+
+
+.ri-link {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    border: none;
 }
 
 .singel-project .overlay .card-heading,
@@ -518,7 +608,7 @@ Service Section
     margin-left: 2px;
 }
 
-.resume-section button  .btn{
+.resume-section button .btn {
     padding: 8px;
 }
 

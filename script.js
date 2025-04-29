@@ -1,3 +1,4 @@
+let backTop = document.getElementById('backTop');
 let unorderList = document.getElementById('unorder');
 let humberger = document.getElementById('bars');
 let htmlCssButton = document.getElementById('htmlCssProjects');
@@ -6,9 +7,39 @@ let singelProject = document.querySelectorAll('.singel-project');
 let allProjects = document.getElementById('allProjects');
 let navLinks = document.querySelectorAll('.nav-link');
 
+
 humberger.addEventListener('click', navIcon)
 
+function navIcon() {
+    humberger.classList.toggle('fa-xmark')
+    unorderList.classList.toggle('ul-active');
 
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            unorderList.classList.remove('ul-active')
+            humberger.classList.remove('fa-xmark')
+        })
+    })
+
+    document.body.classList.toggle('no-scroll');
+}
+
+window.addEventListener('scroll', () => {
+    if (scrollY > 800) {
+        backTop.style.display = 'block';
+        
+    }
+    else {
+        backTop.style.display = 'none';
+    }
+})
+
+backTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})
 
 navLinks.forEach(navlink => {
     navlink.addEventListener('click', () => {
@@ -73,19 +104,6 @@ jsButton.addEventListener('click', (e) => {
 
 
 
-function navIcon() {
-    humberger.classList.toggle('fa-xmark')
-    unorderList.classList.toggle('ul-active');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            unorderList.classList.remove('ul-active')
-            humberger.classList.remove('fa-xmark')
-        })
-    })
-
-    document.body.classList.toggle('no-scroll'); 
-}
 
 //
 
