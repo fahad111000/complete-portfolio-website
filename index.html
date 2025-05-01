@@ -504,18 +504,18 @@
                     </div>
 
                     <!-- Form -->
-                    <form action="#" class="form">
+                    <form action="#" class="form" id="login-form">
 
                         <div class="input-cells">
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Name" name="name" required>
+                            <input type="email" placeholder="Email" name="email" required>
 
                         </div>
-                        <textarea name="" id="" placeholder="Message" rows="10"></textarea>
+                        <textarea placeholder="Message" rows="10" name="message"></textarea>
 
                         <div class="try">
 
-                            <button class="btn">Send Message</button>
+                            <button type="submit" class="btn">Send Message</button>
                         </div>
 
                     </form>
@@ -568,6 +568,9 @@
         </footer>
 
     </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 
     <!-- JS -->

@@ -6,7 +6,27 @@ let jsButton = document.getElementById('jsProjects');
 let singelProject = document.querySelectorAll('.singel-project');
 let allProjects = document.getElementById('allProjects');
 let navLinks = document.querySelectorAll('.nav-link');
+let loginForm = document.getElementById('login-form');
 
+// LoginForm
+loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let scriptUrl = 'https://script.google.com/macros/s/AKfycbynDvg3C-TPihKd5Umqdz19fKljxeuiYrYUFWkmNQwN4hrvWcZrUe-L83F8Q8NHG3UqvQ/exec'
+    let formData = new FormData(loginForm);
+
+    fetch(scriptUrl, {
+        method: "POST",
+        body: formData
+    })
+        .then(response => alert("Form Submitted!", response))
+        .catch(err => alert("Form Faild"))
+
+    loginForm.reset();
+})
+
+
+
+// Job Experinace 
 document.addEventListener("DOMContentLoaded", () => {
     const experinces = [
         { id: 'years', max: 3, speed: 200 },
@@ -25,11 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }, speed)
     })
-})
+});
 
 
 humberger.addEventListener('click', navIcon)
-
 function navIcon() {
     humberger.classList.toggle('fa-xmark')
     unorderList.classList.toggle('ul-active');
@@ -105,6 +124,7 @@ htmlCssButton.addEventListener('click', (e) => {
 
 })
 
+// Js Buttons
 jsButton.addEventListener('click', (e) => {
     e.preventDefault();
     jsButton.classList.add('active')
@@ -128,3 +148,49 @@ jsButton.addEventListener('click', (e) => {
 //
 
 // ___________GSAP animation_________________
+
+window.addEventListener('load', () => {
+
+    let tl = gsap.timeline();
+
+    // Navbar Animation
+    tl.from('.navbar .logo, ul li, .btn', {
+        y: -150,
+        duration: 0.5,
+        opacity: 0,
+        ease: "power4.out",
+        stagger: 0.1
+    });
+
+    // Image Animation
+    tl.from(".image", {
+        x: 100,
+        opacity: 0,
+        ease: "power2.out",
+        duration: 1
+    }, "-=2");
+
+    tl.from(".content", {
+        x: -100,
+        opacity: 0,
+        duration: 1
+    }, "-=1")
+
+    // // singel-info
+    tl.from(".singel-info", {
+        y: 100,
+        opacity: 0
+    })
+
+    tl.set(".skill-card", { overflow: "hidden " })
+    tl.from(".skill-card", {
+        xPercent: 100, //element ko uski apni width ke hisaab se screen ke bahar le jaata hai (right side).
+        opacity: 0,
+        duration: 1.3,
+        ease: "power2.out",
+        stagger: 0.2,
+        delay: 0.3
+    })
+});
+
+
