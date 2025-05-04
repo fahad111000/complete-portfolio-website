@@ -207,7 +207,7 @@ window.addEventListener('load', () => {
     projects.from(".project-section .heading", {
         y: 50,
         opacity: 0,
-        duration: 1
+        duration: 1.5
     });
 
     projects.from('.singel-project', {
