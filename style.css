@@ -36,6 +36,7 @@ a {
 }
 
 .heading {
+    will-change: transform, opacity;
     font-size: 40px;
     color: var(--hover-color);
     font-weight: 700;
@@ -115,8 +116,12 @@ a {
     display: flex;
 }
 
+li {
+    will-change: transform, opacity;
+}
 
 .logo {
+    will-change: transform, opacity;
     margin-left: 76px;
 }
 
@@ -124,6 +129,10 @@ a {
     font-size: 40px;
     font-weight: 700;
     color: var(--hover-color);
+}
+
+.intro .content {
+    will-change: transform, opacity;
 }
 
 
@@ -152,6 +161,7 @@ a:hover {
 }
 
 .resume .btn {
+    will-change: transform, opacity;
     width: 100%;
     border: 1px solid var(--hover-color);
     padding: 8px;
@@ -259,6 +269,7 @@ a:hover {
 }
 
 .intro .container .image {
+    will-change: transform, opacity;
     border: 1px solid #a0c6ee75;
     width: 50%;
     display: flex;
@@ -313,9 +324,10 @@ Service Section
 }
 
 .services-section .extra-info .singel-info {
-    /* opacity: ; */
     display: flex;
     align-items: center;
+    will-change: transform, opacity;
+
 }
 
 .services-section .singel-info .fa-solid {
@@ -381,6 +393,10 @@ Service Section
 =============================================
 */
 
+.project-section {
+    will-change: transform, opacity;
+}
+
 .project-section h1 {
     margin: 0;
 }
@@ -439,6 +455,7 @@ Service Section
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    will-change: transform, opacity;
 }
 
 
@@ -449,7 +466,7 @@ Service Section
     margin-bottom: 70px;
     overflow: hidden;
     border-radius: 4px;
-    /* border: 2px solid red; */
+    will-change: transform, opacity;
 }
 
 .singel-project img {
@@ -539,15 +556,20 @@ Service Section
 
 .resume-section {
     /* border: 2px solid red; */
+    will-change: transform, opacity;
     margin-top: 50px;
 }
 
 .qualification {
-    /* border: 2px solid black; */
+    will-change: transform, opacity;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 50px;
+}
+
+.resume-block {
+    will-change: transform, opacity;
 }
 
 .fa-user-graduate,
@@ -562,6 +584,7 @@ Service Section
 }
 
 .resume-section .qualification .content {
+    will-change: transform, opacity;
     padding: 20px;
     position: relative;
 }
@@ -634,15 +657,19 @@ hr {
 =============================================
 */
 
+,
+.about-section {
+    will-change: transform, opacity;
 
+}
 
 .about-section .about-me {
     margin: 20px auto 0;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
     gap: 100px;
+    will-change: transform, opacity;
 }
 
 
@@ -657,6 +684,7 @@ hr {
 }
 
 .about-section .about-me .my-intro {
+    will-change: transform, opacity;
     width: 40%;
 }
 
@@ -714,6 +742,10 @@ hr {
 =============================================
 */
 
+.contact-us-section {
+    will-change: transform, opacity;
+
+}
 
 .contact-us-section .wrapper {
     margin-top: 50px;
@@ -727,15 +759,18 @@ hr {
 }
 
 .contact-us-section .form-content {
+    margin-top: 100px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 30px;
     padding: 20px;
+    will-change: transform, opacity;
 
 }
 
 .contact-us-section .info {
+    will-change: transform, opacity;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -788,6 +823,7 @@ hr {
 /****** Form ******/
 .contact-us-section .form {
     /* border: 2px solid black; */
+    will-change: transform, opacity;
     display: flex;
     flex-direction: column;
     flex-grow: 5;

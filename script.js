@@ -143,10 +143,6 @@ jsButton.addEventListener('click', (e) => {
 })
 
 
-
-
-//
-
 // ___________GSAP animation_________________
 
 window.addEventListener('load', () => {
@@ -167,30 +163,129 @@ window.addEventListener('load', () => {
         x: 100,
         opacity: 0,
         ease: "power2.out",
-        duration: 1
+        duration: 0.5
     }, "-=2");
 
     tl.from(".content", {
         x: -100,
         opacity: 0,
         duration: 1
-    }, "-=1")
+    }, "-=2")
 
     // // singel-info
     tl.from(".singel-info", {
         y: 100,
         opacity: 0
-    })
+    }, "-=2")
 
-    tl.set(".skill-card", { overflow: "hidden " })
-    tl.from(".skill-card", {
+    tl.set(".skill-card", { overflow: "hidden " });
+
+    gsap.from(".skill-card", {
         xPercent: 100, //element ko uski apni width ke hisaab se screen ke bahar le jaata hai (right side).
         opacity: 0,
         duration: 1.3,
         ease: "power2.out",
         stagger: 0.2,
-        delay: 0.3
+        scrollTrigger: {
+            trigger: ".skill",
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+        }
+
     })
+
+
+
+    // Project Cards Animation
+    let projects = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#project-section",
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+        }
+    })
+    projects.from(".project-section .heading", {
+        y: 50,
+        opacity: 0,
+        duration: 1
+    });
+
+    projects.from('.singel-project', {
+        x: (i) => (i % 2 === 0 ? 100 : -100),
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+        rotateY: 100,
+    });
+
+
+    // Resume Block
+    let resume = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#resume-section",
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+        }
+    });
+
+    resume.from("#resume-section .heading", {
+        y: 50,
+        opacity: 0,
+        duration: 1
+    });
+
+    resume.from(".resume-block", {
+        x: (i) => (i ? 400 : -400),
+        opacity: 0,
+        stagger: 0.3,
+        duration: 1,
+    });
+
+
+    // intro Section
+    let aboutMe = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#about-me",
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+        },
+    });
+
+
+    aboutMe.from(".about-section .heading", {
+        y: 50,
+        opacity: 0,
+        duration: 1
+    });
+
+    aboutMe.from('.my-intro, image', {
+        x: 300,
+        opacity: 0,
+        duration: 1,
+    });
+
+
+    let contactUs = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#contact-us",
+            start: "top 90%",
+            toggleActions: "play none none reverse",
+        }
+    })
+
+    contactUs.from('.contact-us-section .heading', {
+        y: 50,
+        opacity: 0,
+        duration: 1
+    })
+
+    contactUs.from(['.info', '.form'], {
+        x: (i) => (i % 2 === 0 ? 300 : -300),
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+    });
 });
 
 

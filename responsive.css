@@ -615,6 +615,11 @@ a {
 
 @media (768px <=width <=900px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
 
     .navbar ul li a {
         color: var(--primary-color);
@@ -1038,6 +1043,11 @@ a {
 
 /* _________________Mobile  VERSION____________ */
 @media (425px <=width <=768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
     .heading {
         font-size: 40px;
@@ -1488,6 +1498,11 @@ a {
 
 /* _________________Mobile  VERSION____________ */
 @media (375px <=width <=425px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
     /* Utilites Classes */
     .heading {
