@@ -39,6 +39,60 @@ a {
     padding: 2px 0;
 }
 
+@media (1440px <=width <=1920px) {
+
+    /* Navbar */
+    .logo {
+        margin-left: 70px;
+    }
+
+    .navbar .ul {
+        gap: 40px;
+        margin-left: 400px;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 120px 80px;
+    }
+
+    .intro .container h1 {
+        font-size: 70px;
+    }
+
+    .intro .content {
+        width: 65%;
+    }
+
+    /* Services Section */
+    .services-section .skill-card {
+        flex-direction: column;
+        width: 30%;
+        height: 280px;
+        padding: 20px 30px;
+        align-items: flex-start;
+    }
+
+    /* Projects Section */
+    .project-card {
+        justify-content: space-between;
+      }
+
+    .singel-project {
+        width: 30%;
+    }
+
+    /* Contact Section */
+    .contact-us-section .form .btn {
+        width: 20%;
+    }
+
+    /* Footer */
+    .footer-section .sub-footer {
+        font-size: 14px;
+    }
+}
+
 
 @media (1024px <=width <=1440px) {
 

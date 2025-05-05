@@ -449,7 +449,7 @@ Service Section
 
 .project-card {
     display: flex;
-    width: 90%;
+    /* width: 90%; */
     margin: 60px auto 0;
     /* overflow: hidden; */
     justify-content: space-between;
@@ -461,7 +461,7 @@ Service Section
 
 .singel-project {
     position: relative;
-    width: 28%;
+    width: 100%;
     height: 290px;
     margin-bottom: 70px;
     overflow: hidden;
