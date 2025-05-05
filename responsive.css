@@ -50,7 +50,6 @@ a {
     }
 
     .navbar .ul {
-        border: 2px solid red;
         gap: 35px;
         margin-left: 300px;
     }
