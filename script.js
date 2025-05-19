@@ -145,7 +145,7 @@ jsButton.addEventListener('click', (e) => {
 
 // ___________GSAP animation_________________
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
     let tl = gsap.timeline();
 
