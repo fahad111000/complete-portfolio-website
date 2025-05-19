@@ -449,8 +449,8 @@ Service Section
 
 .project-card {
     display: flex;
-    /* width: 90%; */
-    margin: 60px auto 0;
+    width: 90%;
+    margin: 60px 0;
     /* overflow: hidden; */
     justify-content: space-between;
     flex-wrap: wrap;

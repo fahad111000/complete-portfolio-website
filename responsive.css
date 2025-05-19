@@ -76,7 +76,7 @@ a {
     /* Projects Section */
     .project-card {
         justify-content: space-between;
-      }
+    }
 
     .singel-project {
         width: 30%;
@@ -178,9 +178,11 @@ a {
 */
 
     .project-card {
-        justify-content: space-around;
-        width: 100%;
-        margin-top: 50px;
+        display: flex;
+        width: 90%;
+        /* overflow: hidden; */
+        justify-content: none;
+        will-change: transform, opacity;
     }
 
     .singel-project {
